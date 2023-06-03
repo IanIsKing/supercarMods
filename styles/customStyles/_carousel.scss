@@ -1,0 +1,30 @@
+// _carousel.scss
+@import "../variables";
+
+.carousel-caption {
+  h3 {
+    color: $carousel-text-color;
+    font-size: 30px;
+  }
+
+  p {
+    color: $carousel-text-color;
+    font-size: 20px;
+  }
+}
+
+/* Set the max height of the imgages on the carousel */
+.item {
+  max-height: 100vh;
+}
+
+/* Style the carousel */
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-inner img {
+  filter: grayscale(90%);
+  width: 100%;
+  margin: auto;
+}

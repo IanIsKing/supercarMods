@@ -1,0 +1,103 @@
+// _media.scss
+@import "../variables";
+
+/* make the text on the carousel change size when the screen size changes  
+  adjust the screen based on screen size */
+
+@media (min-width: 801px) {
+  .bottom-nav {
+    display: none;
+  }
+  .return-top {
+    cursor: pointer;
+    opacity: 90%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    height: 80px;
+  }
+
+  .turbo-btn {
+    cursor: pointer;
+    opacity: 90%;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 200px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .navbar {
+    font-size: 13px !important;
+    // letter-spacing: 4px;
+  }
+  .return-top {
+    cursor: pointer;
+    opacity: 90%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    font-size: 11px !important;
+    // letter-spacing: 3px;
+  }
+  .navbar-brand {
+    font-size: 13px !important;
+    // letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel-caption {
+    h3 {
+      color: $carousel-text-color;
+      font-size: 20px;
+      margin: 5px 0 10px 0;
+    }
+
+    p {
+      color: $carousel-text-color;
+      font-size: 15px;
+    }
+  }
+  .navbar-fixed-top {
+    // hide the nav bar
+    display: none;
+  }
+  .bottom-nav {
+    display: flex;
+  }
+  .turbo-btn {
+    cursor: pointer;
+    opacity: 90%;
+    position: fixed;
+    left: 20px;
+    bottom: 70px;
+    width: 100px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    h3 {
+      color: $carousel-text-color;
+      font-size: 15px;
+      margin: 5px 0 5px 0;
+    }
+
+    p {
+      color: $carousel-text-color;
+      font-size: 12px;
+    }
+  }
+}

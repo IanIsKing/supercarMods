@@ -1,0 +1,39 @@
+// builds.scss
+
+// style each build to look like a card
+.build {
+  text-align: center;
+  flex: 1;
+  min-width: calc(400px);
+  max-width: 25%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #000000;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 2px 2px 7px 1px rgb(0, 0, 0);
+}
+
+// style the area where the builds will be displayed
+.builds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #c7cddf;
+  background-color: lightgray;
+  box-shadow: 2px 2px 7px 1px lightgray;
+  border-radius: 15px;
+}
+
+// style the delete button
+.delete {
+  background-color: #f44336;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,338 @@
+h3 {
+  margin: 10px 0 30px 0;
+  font-size: 20px;
+  color: #000;
+}
+
+/* changes the bg and texts colour and style of the Toys section */
+.bg-1 {
+  background-image: linear-gradient(to bottom right, rgb(110, 114, 114), rgb(0, 0, 0));
+  color: #bdbdbd;
+}
+.bg-1 h3 {
+  color: #fff;
+}
+.bg-1 ol {
+  text-align: left;
+}
+
+.carousel-caption h3 {
+  color: #fff !important;
+  font-size: 30px;
+}
+.carousel-caption p {
+  color: #fff !important;
+  font-size: 20px;
+}
+
+/* Set the max height of the imgages on the carousel */
+.item {
+  max-height: 100vh;
+}
+
+/* Style the carousel */
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-inner img {
+  filter: grayscale(90%);
+  width: 100%;
+  margin: auto;
+}
+
+/* make the text on the carousel change size when the screen size changes  
+  adjust the screen based on screen size */
+@media (min-width: 801px) {
+  .bottom-nav {
+    display: none;
+  }
+  .return-top {
+    cursor: pointer;
+    opacity: 90%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    height: 80px;
+  }
+  .turbo-btn {
+    cursor: pointer;
+    opacity: 90%;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 200px;
+    height: 140px;
+  }
+}
+@media (min-width: 1201px) {
+  .navbar {
+    font-size: 13px !important;
+  }
+  .return-top {
+    cursor: pointer;
+    opacity: 90%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    height: 80px;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar {
+    font-size: 11px !important;
+  }
+  .navbar-brand {
+    font-size: 13px !important;
+  }
+}
+@media (max-width: 800px) {
+  .carousel-caption h3 {
+    color: #fff !important;
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+  }
+  .carousel-caption p {
+    color: #fff !important;
+    font-size: 15px;
+  }
+  .navbar-fixed-top {
+    display: none;
+  }
+  .bottom-nav {
+    display: flex;
+  }
+  .turbo-btn {
+    cursor: pointer;
+    opacity: 90%;
+    position: fixed;
+    left: 20px;
+    bottom: 70px;
+    width: 100px;
+    height: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .carousel-caption h3 {
+    color: #fff !important;
+    font-size: 15px;
+    margin: 5px 0 5px 0;
+  }
+  .carousel-caption p {
+    color: #fff !important;
+    font-size: 12px;
+  }
+}
+/* Styles the nav bar to better suit the theme */
+.nav-tabs li a {
+  color: #777;
+}
+
+.navbar {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  opacity: 0.8;
+  z-index: 50;
+}
+.navbar li a,
+.navbar .navbar-brand {
+  color: #d5d5d5 !important;
+  background-color: #29292c !important;
+}
+.navbar .navbar-nav li a:hover {
+  color: #fff !important;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgb(8, 6, 12) !important;
+}
+
+.bottom-nav {
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #222;
+  z-index: 50;
+}
+
+.bottom-nav a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.bottom-nav i {
+  font-size: 24px;
+}
+
+.bottom-nav p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.badge {
+  background-color: #dc3545;
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  border: 0px;
+  padding: 20px;
+}
+
+label {
+  margin: 2px;
+}
+
+input,
+textarea {
+  resize: none;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#addBuild,
+#update,
+#cancel,
+#showModal {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+#addBuild,
+#update,
+#showModal {
+  background-color: #4caf50;
+  color: white;
+}
+
+#cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  margin: 5px 0;
+}
+
+select option {
+  padding: 10px;
+}
+
+/* For focus on select */
+select:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+/* Styling the dropdown arrow of select box */
+select::-ms-expand {
+  display: none;
+}
+
+.build {
+  text-align: center;
+  flex: 1;
+  min-width: 400px;
+  max-width: 25%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #000000;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 2px 2px 7px 1px rgb(0, 0, 0);
+}
+
+.builds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #c7cddf;
+  background-color: lightgray;
+  box-shadow: 2px 2px 7px 1px lightgray;
+  border-radius: 15px;
+}
+
+.delete {
+  background-color: #f44336;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Adds some styles, colour and fonts to the body */
+body {
+  font: 300 15px/1.8 Lato, sans-serif;
+  color: #777;
+}
+
+/* add padding to the containers */
+.container {
+  padding: 80px 120px;
+}
+
+.myContainer {
+  padding: 80px 120px;
+}
+
+/* Gives a better theme style to the buttons */
+.btn {
+  padding: 10px 20px;
+  background-image: linear-gradient(to bottom right, rgb(137, 145, 145), rgb(34, 6, 34));
+  color: #f1f1f1;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-image: linear-gradient(to bottom right, rgb(253, 253, 253), rgb(112, 112, 112));
+  color: #000;
+}/*# sourceMappingURL=main.css.map */

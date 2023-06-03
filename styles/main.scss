@@ -1,0 +1,46 @@
+@import "customStyles/fonts";
+@import "customStyles/carousel";
+@import "customStyles/media";
+@import "variables";
+@import "customStyles/navbar";
+@import "customStyles/modal";
+@import "customStyles/builds";
+
+/* Adds some styles, colour and fonts to the body */
+body {
+  font: $main-font;
+  color: #777;
+}
+
+/* add padding to the containers */
+.container {
+  padding: 80px 120px;
+}
+
+.myContainer {
+  padding: 80px 120px;
+}
+
+/* Gives a better theme style to the buttons */
+.btn {
+  padding: 10px 20px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(137, 145, 145),
+    rgb(34, 6, 34)
+  );
+  color: #f1f1f1;
+  border-radius: 5px;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #333;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(253, 253, 253),
+      rgb(112, 112, 112)
+    );
+    color: $text-color-dark;
+  }
+}

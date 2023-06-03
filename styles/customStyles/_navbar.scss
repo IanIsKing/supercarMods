@@ -1,0 +1,61 @@
+@import "../variables";
+
+/* Styles the nav bar to better suit the theme */
+.nav-tabs li a {
+  color: #777;
+}
+
+.navbar {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  opacity: 0.8;
+  z-index: 50;
+
+  li a,
+  .navbar-brand {
+    color: #d5d5d5 !important;
+    background-color: #29292c !important;
+  }
+
+  .navbar-nav {
+    li {
+      a:hover {
+        color: $text-color-light !important;
+      }
+    }
+  }
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgb(8, 6, 12) !important;
+}
+
+.bottom-nav {
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #222;
+  z-index: 50;
+}
+.bottom-nav a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+.bottom-nav i {
+  font-size: 24px;
+}
+.bottom-nav p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.badge {
+  background-color: #dc3545;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TurboLamboUniverse</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+
+    <!-- link a fivicon -->
+    <link rel="icon" href="images/Turbo1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage"
+            >Your Gateway to Turbocharged Lamborghini Excellence</a
+          >
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="supercar_mods.html">HOME</a></li>
+            <li><a href="turbos.html">Turbos</a></li>
+            <li><a href="ecu.html">ECUs</a></li>
+            <li>
+              <a href="builds.html"
+                >My Builds <span id="buildsCount" class="badge"></span
+              ></a>
+            </li>
+            <li><a href="videos.html">Videos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bottom-nav">
+      <a href="supercar_mods.html">
+        <i class="fas fa-home"></i>
+        <p>Home</p>
+      </a>
+      <a href="turbos.html">
+        <i class="fas fa-tachometer-alt"></i>
+        <p>Turbo</p>
+      </a>
+      <a href="ecu.html">
+        <i class="fas fa-microchip"></i>
+        <p>ECU</p>
+      </a>
+      <a href="builds.html">
+        <i class="fa-regular fa-floppy-disk"></i>
+        <p>My Builds</p>
+      </a>
+      <a href="videos.html">
+        <i class="fas fa-cogs"></i>
+        <p>Videos</p>
+      </a>
+    </div>
+
+    <div class="bg-1">
+      <div class="myContainer text-center">
+        <h1>My Saved Builds</h1>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="builds"></h3>
+    </div>
+
+    <!-- Model to add a build -->
+    <div class="overlay" id="overlay" style="display: none"></div>
+    <div id="modal" style="display: none">
+      <form class="modal-content" style="display: flexbox">
+        <label><h1>Build my conversion</h1></label>
+        <label for="title">Build Name</label>
+        <input type="text" name="title" id="title" required />
+        <label for="engine">Select Engine</label>
+        <select name="engine" id="engine" required>
+          <option value="" disabled selected>Select Engine</option>
+          <option value="500">Gallardo 5.0L V10</option>
+          <option value="560">Gallardo 5.2L LP560-4</option>
+          <option value="580">Huracán 5.2L LP580-2</option>
+          <option value="610">Huracán 5.2L LP610-4</option>
+          <option value="640">Huracán 5.2L LP640-4</option>
+        </select>
+
+        <label for="turbo">Select Turbo</label>
+        <select name="turbo" id="turbo" required>
+          <option value="" disabled selected>Select Turbo</option>
+          <option value="1">Twin Garret GT35</option>
+          <option value="2">Twin Garret GTX35</option>
+          <option value="3">Twin Garret G35</option>
+          <option value="4">Twin Garret G42</option>
+        </select>
+
+        <label for="ecu">Select ECU</label>
+        <select name="ecu" id="ecu" required></select>
+
+        <label for="mods">Select Mods</label>
+        <select name="mods" id="mods" required></select>
+
+        <label for="fuel">Select Fuel</label>
+        <select name="fuel" id="fuel" required></select>
+
+        <label for="boost">Select Boost</label>
+        <select name="boost" id="boost" required></select>
+
+        <label for="notes">Notes</label>
+        <textarea
+          name="notes"
+          id="notes"
+          cols="30"
+          rows="2"
+          required
+        ></textarea>
+        <button onclick="addNext()" id="addBuild">Add Build</button>
+        <button onclick="closeModal()" id="cancel" type="button">Cancel</button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div>
+        <a
+          ><img
+            class="turbo-btn"
+            src="images/Turbo1.png"
+            data-toggle="tooltip"
+            title="Create My Build"
+        /></a>
+      </div>
+      <br /><br />
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="mods.js"></script>
+  </body>
+</html>

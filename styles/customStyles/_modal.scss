@@ -1,0 +1,92 @@
+// style the modal
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  border: 0px;
+  padding: 20px;
+}
+
+label {
+  margin: 2px;
+}
+
+input,
+textarea {
+  resize: none;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#addBuild,
+#update,
+#cancel,
+#showModal {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+#addBuild,
+#update,
+#showModal {
+  background-color: #4caf50;
+  color: white;
+}
+
+#cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  margin: 5px 0;
+}
+
+select option {
+  padding: 10px;
+}
+
+/* For focus on select */
+select:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+/* Styling the dropdown arrow of select box */
+select::-ms-expand {
+  display: none;
+}
